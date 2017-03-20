@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Example</title>
+<script src="../dist/index.js"></script>
+</head>
+<body>
+
+<p>
+  State JSON:<br>
+  <textarea id="stateJsonInput"></textarea><br>
+  <button id="navigateButton">Navigate</button>
+</p>
+
+<h1>Logs</h1>
+<p id="log"></p>
+
+<script>
+  var router = new StateHashRouter().addNavigationListener(function (state) {
+    document.getElementById('log').innerText += 'Navigation:\nHash: ' + window.location.hash + '\nState:\n' + JSON.stringify(state) + '\n\n';
+  }).attach();
+
+  document.getElementById('navigateButton').addEventListener('click', function () {
+    router.navigate(JSON.parse(document.getElementById('stateJsonInput').value || '{}'));
+  });
+</script>
+
+</body>
+</html>
