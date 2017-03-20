@@ -1,6 +1,6 @@
 {
   "name": "state-hash-router",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A History API wrapper to sync URL hash with state object",
   "keywords": [
     "router",

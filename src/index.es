@@ -1,10 +1,10 @@
 // Private functions
 function encodeBase64(str) {
-  return btoa(str).replace(/=/g, '_').replace(/\+/g, '-');
+  return btoa(str).replace(/=/g, '~').replace(/\+/g, '-').replace(/\//g, '_');
 }
 
 function decodeBase64(str) {
-  return atob(str.replace(/_/g, '=').replace(/-/g, '+'));
+  return atob(str.replace(/~/g, '=').replace(/-/g, '+').replace(/_/g, '/'));
 }
 
 // Private methods
