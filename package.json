@@ -1,0 +1,36 @@
+{
+  "name": "state-hash-router",
+  "version": "0.1.0",
+  "description": "A History API wrapper to sync URL hash with state object",
+  "keywords": [
+    "router",
+    "state",
+    "hash",
+    "redux"
+  ],
+  "author": "reINC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reINC/state-hash-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reINC/state-hash-router/issues"
+  },
+  "homepage": "https://github.com/reINC/state-hash-router#readme",
+  "main": "dist\\index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublish": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
+    "webpack": "^2.2.1"
+  }
+}
