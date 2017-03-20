@@ -20,10 +20,11 @@
   "homepage": "https://github.com/reINC/state-hash-router#readme",
   "main": "dist\\index.js",
   "files": [
-    "dist"
+    "dist",
+    "example"
   ],
   "scripts": {
-    "prepublish": "webpack",
+    "prepublish": "webpack"
   },
   "dependencies": {},
   "devDependencies": {

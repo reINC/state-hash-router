@@ -39,6 +39,9 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
+# Optional npmrc
+.npmrc
+
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
